@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>Search</title>
+  </head>
+
+  <body>
+    <header class="header-advance">
+        <img class="img-advance"
+        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+      />
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="/index.html">Google Search</a></li>
+          <li><a class="main-nav-link" href="/searchImage.html">Image Search</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main-section">
+     <div class="search-heading">
+      <span class="title-advance">Advanced Search</span>
+     </div>
+     <div class="horizol-bar"></div>
+     <div class=search-advance-container>
+       <form action="https://www.google.com/search" method="GET" name="f">
+        <div class="search-title">
+            Find pages with...
+        </div>
+        
+        <div class="seach-option-container">
+            <div class="option1">
+              <span>all these words:</span>
+            </div>
+            <div class="seach-input">
+              <input class="submit-option1" name="as_q" value="q" type="text" autofocus="autofocus">
+            </div>
+          </div>
+
+          <div class="seach-option-container">
+              <div class="option1">
+                <span>this exact word or phrase:</span>
+              </div>
+              <div class="seach-input">
+                <input class="submit-option1" name="as_epq" type="text" autofocus="autofocus">
+              </div>
+          </div>
+
+            <div class="seach-option-container">
+                <div class="option1">
+                  <span>any of these words:</span>
+                </div>
+                <div class="seach-input">
+                  <input class="submit-option1" name="as_oq" type="text" autofocus="autofocus">
+                </div>
+            </div>
+
+            <div class="seach-option-container">
+                <div class="option1">
+                  <span>none of these words:</span>
+                </div>
+                <div class="seach-input">
+                  <input class="submit-option1" name="as_eq" type="text" autofocus="autofocus">
+                </div>
+            </div>
+
+            <div class="seach-btn-container">
+                <div class="support">
+                  <span></span>
+                </div>
+                <div class="seach-input">
+                  <input class="submit-btn-advance" value="Advanced Search" type="submit">
+                </div>
+            </div>
+      </form>
+     </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./src/index.js"></script>
+    <script src="https://www.googleapis.com/customsearch/v1?key=YOUR-KEY&cx=017576662512468239146:omuauf_lfve&q=cars&callback=hndlr">
+
+  </body>
+</html>
+
+

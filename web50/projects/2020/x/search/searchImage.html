@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>Search</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="/index.html">Google Search</a></li>
+          <li><a class="main-nav-link" href="/advanceSearch.html">Advance Search</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main-section">
+      <div class="image">
+          <div class="imageContainer">
+              <img
+                src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+              />
+              <span class="imageText">Images</span>
+            </div>
+      </div>
+
+      <form action="https://www.google.com/search" method="GET" role="search">
+        <div class="search-container">
+          <div class="search-bar">
+            <div class="search-icon">
+              <ion-icon
+                class="icon icon-glass"
+                name="search-outline"
+              ></ion-icon>
+            </div>
+            <input type="text" name="q"/>
+            <div class="search-icon">
+              <button class="btn-search-btn" type="submit" name="tbm" value="isch">
+                  <ion-icon
+                  class="icon icon-glass icon-glass-search"
+                  name="search-outline"
+                ></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./src/index.js"></script>
+    <script src="https://www.googleapis.com/customsearch/v1?key=YOUR-KEY&cx=017576662512468239146:omuauf_lfve&q=cars&callback=hndlr">
+  </body>
+</html>
+
+
